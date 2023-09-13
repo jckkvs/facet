@@ -259,7 +259,7 @@ The key global metrics for each pair of features in a model are:
     # fit the model inspector
     from facet.inspection import LearnerInspector
     inspector = LearnerInspector(
-        pipeline=selector.best_estimator_,
+        model=selector.best_estimator_,
         n_jobs=-3
     ).fit(diabetes_sample)
 
